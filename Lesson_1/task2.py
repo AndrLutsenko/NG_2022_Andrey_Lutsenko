@@ -26,7 +26,3 @@ while True:
         c=math.sqrt(a)
         d=math.sqrt(b)
         print('√A='+str(c), '√B='+str(d))
-    if operation=='V':
-        print('🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡')
-        print('🧡  No "V", only "√"  🧡')
-        print('🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡')
