@@ -1,28 +1,28 @@
 import math
 while True:
     print('Value A')
-    a=float(input())
+    value_a=float(input())
     print('Value B')
-    b=float(input())
+    value_b=float(input())
     print('Enter an operation +,-,*,/,^,√')
     operation=str(input())
     if operation=='+':
-        c=a+b
-        print(c)
+        result_c=value_a+value_b
+        print(result_c)
     if operation=='-':
-        c=a-b
-        print(c)
+        result_c=value_a-value_b
+        print(result_c)
     if operation=='*':
-        c=a*b
-        print(c)
+        result_c=value_a*value_b
+        print(result_c)
     if operation=='/':
-        c=a/b
-        print(c)
+        result_c=value_a/value_b
+        print(result_c)
     if operation=='^':
-        c=a*a
-        d=b*b
-        print('A^2='+str(c), 'B^2='+str(d))
+        result_c=value_a*value_a
+        result_d=value_b*value_b
+        print('A^2='+str(result_c), 'B^2='+str(result_d))
     if operation=='√':
-        c=math.sqrt(a)
-        d=math.sqrt(b)
-        print('√A='+str(c), '√B='+str(d))
+        result_c=math.sqrt(value_a)
+        result_d=math.sqrt(value_b)
+        print('√A='+str(result_c), '√B='+str(result_d))
