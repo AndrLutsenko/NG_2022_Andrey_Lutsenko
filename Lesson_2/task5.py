@@ -1,0 +1,10 @@
+print('Enter list: ')
+value_list=list(map(int,input().split(',')))
+print('Your list: ')
+print(value_list)
+max_value=max(value_list)
+min_value=min(value_list)
+summa=sum(value_list)-max_value-min_value
+print(f'Maximum value={max_value}')
+print(f'Minimum value={min_value}')
+print(f'Sum of elements={summa}')
