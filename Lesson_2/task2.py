@@ -1,2 +1,3 @@
-st = { "Andrew", "Mikle", "Sandra", "Gordon", "Mikle" }
-print (str(st))
+list = [ "Andrew", "Mikle", "Sandra", "Gordon", "Mikle" ]
+list=set(list)
+print (str(list))
