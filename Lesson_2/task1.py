@@ -1,9 +1,5 @@
-#String input
-#print('Enter the string: ')
-#string=input()
 dicts=input(dict())#"Enter the string: ")
-print(f'Your string: ', dict(dicts))
-print(type(dicts))
+print(f'Your string: ', dicts)
 #Exercise 1
 s_string = set(dicts) #non-repeating elements
 summ = [] #Summation of elements
