@@ -1,3 +1,3 @@
-list = [ "Andrew", "Mikle", "Sandra", "Gordon", "Mikle" ]
+list = input().split(",")
 list=set(list)
 print (str(list))

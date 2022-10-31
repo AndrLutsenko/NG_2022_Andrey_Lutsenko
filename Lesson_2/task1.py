@@ -1,14 +1,16 @@
 #String input
-print('Enter the string: ')
-string=input()
-print(f'Your string: ',str(string))
+#print('Enter the string: ')
+#string=input()
+dicts=dict()#"Enter the string: ")
+print(f'Your string: ', dicts)
+print(type(dicts))
 #Exercise 1
-s_string = set(string) #non-repeating elements
+s_string = set(dicts) #non-repeating elements
 summ = [] #Summation of elements
 #Exercise 2
 for s_symbol in s_string:
     count = 0
-    for symbol in string:
+    for symbol in dicts:
         if s_symbol == symbol:
             count += 1
     summ.append(f'{s_symbol}= {count}')
