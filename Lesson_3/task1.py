@@ -40,22 +40,25 @@ def SQRTElements(first_element_for_sqrt, second_element_for_sqrt):
 def processAndShowPowerNumberSQRT():
     print ("Result: " + str(SQRTElements(EnterValue("Enter first value: "),EnterValue("Enter second value: "))))
 
-operation=str(input("Enter an operation +,-,*,/,^,√: "))
+def globalresult():
+    operation=str(input("Enter an operation +,-,*,/,^,√: "))
 
-if operation=='+':
-    processAndShowPowerNumberSum()
+    if operation=='+':
+        processAndShowPowerNumberSum()
 
-if operation=='-': 
-    processAndShowPowerNumberMinus()
+    if operation=='-': 
+        processAndShowPowerNumberMinus()
 
-if operation=='*':
-    processAndShowPowerNumberMultiplication()
+    if operation=='*':
+        processAndShowPowerNumberMultiplication()
 
-if operation=='/':          
-    processAndShowPowerNumberDivision()
+    if operation=='/':          
+        processAndShowPowerNumberDivision()
 
-if operation=='^':        
-    processAndShowPowerNumberDegree()
+    if operation=='^':        
+        processAndShowPowerNumberDegree()
 
-if operation=='√':            
-    processAndShowPowerNumberSQRT()
+    if operation=='√':            
+        processAndShowPowerNumberSQRT()
+
+globalresult()
