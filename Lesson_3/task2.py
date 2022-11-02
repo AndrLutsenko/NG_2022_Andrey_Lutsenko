@@ -67,21 +67,28 @@ def resultPrint():
 def exitProgram():
         exit
 
-section=str(input("Menu: \n1. String sort\n2. Quantity of elements\n3. Vowels and consonants\n4. Partition and reverse\n5. World by number\n6. Enter string again\n7. Exit\nChoose a section:\n"))
+def globalresult():
+    section=str(input("Menu: \n1. String sort\n2. Quantity of elements\n3. Vowels and consonants\n4. Partition and reverse\n5. World by number\n6. Enter string again\n7. Exit\nChoose a section:\n"))
 
-if section=='1':
-    resultsort()
+    if section=='1':
+        resultsort()
 
-if section=="2":
-    resultQuantity()
+    if section=="2":
+        resultQuantity()
 
-if section=="3":
-    resultVowelsAndConsonants()
-if section=="4":
-    resultPartitionAndReverse()
-if section=="5":
-    resultWorldByNumber()
-if section=="6":
-    resultPrint()
-if section=="7":
-    exitProgram()
+    if section=="3":
+        resultVowelsAndConsonants()
+
+    if section=="4":
+        resultPartitionAndReverse()
+
+    if section=="5":
+        resultWorldByNumber()
+
+    if section=="6":
+        resultPrint()
+
+    if section=="7":
+        exitProgram()
+
+globalresult()
