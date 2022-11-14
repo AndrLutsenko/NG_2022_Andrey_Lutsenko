@@ -1,9 +1,16 @@
 def enterCard(text):
     enter_string = str(input(text))
-    return enter_string
+    first_index=enter_string[4]
+    second_index=enter_string[9]
+    third_index=enter_string[14]
+    if first_index==" " and second_index==" " and third_index==" ":
+        return enter_string
+    else:
+        strings=' '.join(enter_string[i*4:(i+1)*4] for i in range(4))
+        return strings
 
 def bankcard(enter_strings):
-    if len(enter_strings)==19:
+    if len(enter_strings)==19 or len(enter_strings)==16:
         print("Bank card: " + enter_strings)
         index=enter_strings[0]
         if index=="4":
