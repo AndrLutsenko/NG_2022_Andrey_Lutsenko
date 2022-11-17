@@ -1,12 +1,16 @@
-English_alfavit="ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
-step=int(input("Encryption step: ")) #step 13 for message
-message=input("Message to decrypt: ").upper()
-result=""
-for i in message:
-        position=English_alfavit.find(i)
-        new_position = position+step
-        if i in English_alfavit:
-            result+=English_alfavit[new_position]
-        else:
-             result += i
-print("\n",result)
+import random
+
+massiv=int(input("Введіть кількість елементів масиву: "))
+n=[random.randint(1,50) for i in range(massiv)]
+print("Elements massiv: ", n)
+dobutok = 1
+ 
+def DDobutok(x):  
+    global dobutok
+    if x == len(n):
+        return    
+    dobutok  *= n[x]
+    DDobutok(x+1)
+ 
+DDobutok(0)
+print('\nDobutok = ', dobutok)

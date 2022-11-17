@@ -1,5 +1,6 @@
-import pandas as pd
+str=input("Enter string: ")
 
-strings = str(input("Enter string: "))
-list_string=list(strings)
-print(pd.value_counts(list_string))
+lists=list(str)
+result = dict((i, lists.count(i)) for i in lists )
+for key in sorted(result):
+    print(key,result[key])
