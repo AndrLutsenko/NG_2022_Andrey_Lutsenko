@@ -1,10 +1,12 @@
 def enterCard(text):
     enter_string = str(input(text))
-    first_index=enter_string[4]
-    second_index=enter_string[9]
-    third_index=enter_string[14]
-    if first_index==" " and second_index==" " and third_index==" ":
+    #first_index=enter_string[4]
+    #second_index=enter_string[9]
+    #third_index=enter_string[14]
+    if enter_string[4]==" " and enter_string[9]==" " and enter_string[14]==" ":
         return enter_string
+    elif enter_string[4]=="" and enter_string[9]=="" and enter_string[14]=="":
+        return "error"
     else:
         strings=' '.join(enter_string[i*4:(i+1)*4] for i in range(4))
         return strings
